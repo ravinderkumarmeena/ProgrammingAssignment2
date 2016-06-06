@@ -35,7 +35,7 @@ cacheSolve <- function(x, ...) {
     return(ram)
   }
   matrix<- x$get()
-  inv <- solve(matrix, ...)
+  ram <- solve(matrix, ...)
   x$setInverse(ram)
   ram
  }
